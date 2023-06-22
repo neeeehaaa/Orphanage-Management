@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="internal1.Site1" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Sign in</title>  
+    
+    <link href="StyleSheet1.css" rel="stylesheet" />  
+    <asp:ContentPlaceHolder ID="head" runat="server">  
+    </asp:ContentPlaceHolder>  
+    </head>  
+
+<body>
+    <form id="form1" runat="server">
+       
+            <header id="header"> 
+            <h1><asp:Image ID="Image1" runat="server" Height="444px" Width="1298px" img src="neo.jpg"/>
+                </h1> 
+                
+</header>  
+<nav id="nav">  
+    <ul>  
+        <li><a href="home1.aspx">Home</a></li>  
+        <li><a href="#">About</a></li>  
+        <li><a href="#">Article</a></li>
+        <li><a href="#">Contact</a></li>
+          
+    </ul>  
+</nav>  
+<aside id="side">  
+    <h1 font-size="22pt">hello</h1>  
+   <p>
+        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" CausesValidation="False">Login</asp:LinkButton> </p>
+   <p> <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Register</asp:LinkButton> </p> 
+</aside>  
+  
+  
+    <div id="con">  
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">  
+      
+        </asp:ContentPlaceHolder>  
+    </div>  
+  
+  
+<footer id="footer">  
+   <p> contact us:</p>
+   <p> mail : banasthali123@gmail.com</p>
+</footer>  
+       
+    </form>
+</body>
+</html>
+
